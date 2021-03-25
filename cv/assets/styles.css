@@ -1,0 +1,370 @@
+*,
+*::before,
+*::after    {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* font-family: Helvetica Neue, Arial, sans-serif; */
+    font-size: 16px;
+}
+
+nav {
+    overflow: hidden;
+    max-height: 53px;
+    background-color: rgba(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.95);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    user-select: none;
+    -webkit-box-shadow: 0px -18px 20px 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px -18px 20px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px -18px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+nav p {
+    float: left;
+    display: flex;
+    color: #000;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 1.25em;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cv {
+    font-weight: 200;
+    font-style: italic;
+    color: #555;
+    text-transform: none;
+    padding-left: 14px;
+}
+
+nav a {
+    float: right;
+    color: #000;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+nav a:hover {
+    color: #AAA;
+    transition: 0.3s;
+}
+
+header {
+    background: linear-gradient(to right, rgba(32, 63, 201, 0.589), rgba(64, 0, 184, 0.76));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portrait {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 2px #FFF;
+    -webkit-box-shadow: -5px 5px 15px -2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -5px 5px 15px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: -5px 5px 15px -2px rgba(0, 0, 0, 0.5);
+}
+
+.sns {
+    width: 100px;
+    transition: 0.3s;
+}
+
+.sns:hover {
+    transform: scale(1.15);
+}
+
+header h1,
+h2 {
+    color: #FFF;
+    margin: 8px 0;
+}
+
+h3 {
+    margin: 40px;
+    z-index: 0;
+}
+
+h3 a {
+    text-decoration: none;
+    color: #FFF;
+    border: solid 2px #FFF;
+    border-radius: 5px;
+    /* margin-top: 40px; */
+    padding: 10px;
+    transition: 0.3s;
+}
+
+h3 a:hover {
+    color: #555;
+    background-color: #FFF;
+}
+
+section {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section h1 {
+    border-bottom: solid 3px orange;
+    text-transform: uppercase;
+    margin-top: 100px;
+    letter-spacing: 6px;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.h1fix {
+    display: inline-block;
+    margin-right: -6px;
+}
+
+section p.main {
+    width: 75vw;
+    font-size: 1.33em;
+    margin: 100px 0;
+}
+
+br {
+    content: "" !important;
+    display: block !important;
+    margin-bottom: 1.5em !important;
+}
+
+.featured {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.mini {
+    width: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.specialbottom {
+    margin-bottom:50px;
+}
+
+.specialtop {
+    margin-top:50px;
+}
+
+.block {
+    background-color: #EEE;
+    padding: 25px;
+    max-width: 400px;
+    margin: 15px;
+    box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.75);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75vw;
+    font-size: 1.33em;
+}
+
+.block:hover {
+    box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.75);
+    transform: translateY(-3px);
+}
+
+.block br {
+    content: "" !important;
+    display: block !important;
+    margin-bottom: 0.5em !important;
+}
+
+.whiteblock br {
+    content: "" !important;
+    display: block !important;
+    margin-bottom: 0.5em !important;
+}
+
+.block p,
+ul {
+    margin: 0;
+}
+
+.whiteblock {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: nowrap;
+    font-size: 1.33em;
+    max-width: 500px;
+}
+
+.icon {
+    min-width: 50px;
+    max-width: 50px;
+    margin: 15px;
+}
+
+.contact {
+    background-color: #000;
+    color: white;
+}
+
+.form-body {
+    font-size: 1.33em;
+    width: 75vw;
+    margin: 100px 0;
+}
+
+.form-zone {
+    margin-bottom: 15px;
+}
+
+.input-zone {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    margin: 15px 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: none;
+    color: #000;
+    outline: none;
+    border-radius: 0.25rem;
+}
+
+.label {
+    margin-bottom: 0.5em;
+}
+
+.btn {
+    padding: 15px;
+    user-select: none;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.33rem;
+    -webkit-appearance: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(128, 173, 130);
+}
+
+.a-port {
+    background-color: #EEE;
+    /* padding:25px; */
+    width: 200px;
+    /* max-width: 300px; */
+    margin: 15px;
+    box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.75);
+    transition: 0.3s;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* width: 75vw; */
+    font-size: 1.33em;
+    text-decoration: none;
+    color: #000;
+}
+
+.a-port:hover {
+    box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.75);
+    transform: translateY(-3px);
+}
+
+.img-port {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.subtitle {
+    padding: 25px;
+}
+
+@media only screen and (max-width: 1072px) {
+    nav a {
+        display: none;
+        visibility: hidden;
+    }
+
+    section h1 {
+        font-size: 1.5em;
+        margin-top: 50px;
+    }
+
+    .block,
+    .whiteblock {
+        font-size: 1.10em;
+    }
+
+    .specialbottom {
+        margin-bottom:25px;
+    }
+    
+    .specialtop {
+        margin-top:25px;
+    }
+
+    section p.main {
+        font-size: 1.15em;
+        margin: 50px 0;
+    }
+
+    .container {
+        margin: 50px 0;
+    }
+
+    .education {
+        margin: 50px 0;
+    }
+}
+
+
+@media only screen and (max-width: 322px) {
+
+    /* ONLY BECAUSE OF THE IPHONE 5 AND SIMILAR PHONES' SCREEN WIDTH */
+    nav p {
+        font-size: 1.20em;
+    }
+}

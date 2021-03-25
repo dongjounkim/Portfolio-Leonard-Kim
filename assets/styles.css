@@ -1,0 +1,505 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+svg {
+    display: block;
+}
+
+.svgfix-top {
+    margin-top: -2px;
+}
+
+.svgfix-bottom {
+    margin-bottom: -2px;
+}
+
+nav {
+    overflow: hidden;
+    max-height: 80px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    /* user-select: none; */
+}
+
+
+nav p {
+    float: left;
+    display: flex;
+    color: #FFF;
+    text-align: center;
+    padding: 30px 50px;
+    text-decoration: none;
+    font-size: 1.17em;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a {
+    float: right;
+    color: #FFF;
+    text-align: center;
+    margin: 30px 50px;
+    text-decoration: none;
+    font-size: 1.17em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a:hover {
+    color: #DDD;
+    transition: 0.3s;
+}
+
+.mail-icon {
+    filter: invert(1);
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+.hero-bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(28, 210, 242), rgb(68, 0, 204));
+    opacity: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 35vh;
+    left: -500px;
+    opacity: 0;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    font-size: 1.5em;
+}
+
+.name-res {
+    display: none;
+}
+
+.cv {
+    font-weight: 200;
+    font-style: italic;
+    color: #EEE;
+    text-transform: none;
+    padding-left: 14px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin: 10px 10px;
+}
+
+.hero-text p {
+    margin: 10px 10px;
+}
+
+.intro {
+    top: -5em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.textcontainer {
+    margin-left: 10vw;
+    position: relative;
+    float: left;
+    width: 40vw;
+}
+
+.textcontainer h2 {
+    width: 100%;
+}
+
+.laptop {
+    /* width: 40vw; */
+    max-width: 500px;
+    height: auto;
+    right: 0;
+    position: absolute;
+}
+
+.intro h2 {
+    width: 40vw;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 0;
+}
+
+.intro p {
+
+    font-size: 1.5rem;
+}
+
+.svg-up {
+    margin-top: -5rem;
+}
+
+.projects {
+    background-color: rgb(68, 0, 204);
+    margin: 0;
+    height: auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects h2 {
+    margin: 0;
+    color: #ffffff;
+    width: 40vw;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    margin-bottom: 5rem;
+}
+
+.card {
+    width: 180px;
+    height: 230px;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000000;
+    transition: 0.3s;
+    margin: 1rem 1rem;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px #000000;
+    transform: scale(1.05);
+
+
+}
+
+.thumb {
+    margin-top: 0;
+    max-width: 100%;
+    height: 180px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: block;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-desc {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-desc p {
+    margin: auto;
+    color: #000000;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: rgb(68, 0, 204);
+    height: 10vh;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2px;
+}
+
+/* ====================================== 
+DOCUMENT EXPO
+*/
+
+.top-bg {
+    width: 100vw;
+    height: 25vh;
+    background-image: linear-gradient(rgb(28, 210, 242), rgb(68, 0, 204));
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.top-text {
+    text-align: left;
+    position: absolute;
+    top: 12vh;
+    left: 10vw;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    font-size: 2em;
+}
+
+.return {
+    float: left;
+}
+
+.expo-intro {
+    overflow: hidden;
+    top: -1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.expo-text {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.expo-text p {
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+    font-size: 1.25rem;
+    align-self: flex-start;
+}
+
+.expo-image {
+    width: 60vw;
+}
+
+.expo-video {
+    width: 60vw;
+    margin-bottom: 2.5rem;
+    height: auto;
+}
+
+.expo-video-vertical {
+    width: 30vw;
+    margin-bottom: 2.5rem;
+    height: auto;
+}
+
+.bottombtn {
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+button {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    user-select: none;
+    width: auto;
+    height: 60px;
+    border-radius: 50px;
+    outline: none;
+    background: linear-gradient(90deg, #004BA8, #3E78B2, #41aea9, #004BA8);
+    background-size: 400%;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    transition: .2s;
+    padding: 0 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, #004BA8, #3E78B2, #41aea9, #004BA8);
+    background-size: 400%;
+    border-radius: 50px;
+    opacity: 0;
+    transition: .5s;
+
+} */
+
+button:hover {
+    animation: animate 10s linear infinite;
+    transform: scale(1.125);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+button:hover::before {
+    filter: blur(25px);
+    opacity: .8;
+    animation: animate 10s linear infinite;
+
+}
+
+.cvbtn {
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .laptop {
+        display: none;
+    }
+
+    .textcontainer {
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .intro {
+        overflow: hidden;
+        top: -1rem;
+        position: relative;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+    }
+
+    .hero-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        left: auto;
+        opacity: 1;
+        top: auto;
+        /* transform: translate(-50%, -50%); */
+        color: white;
+        font-size: 1.5em;
+    }
+
+    .cvbtn {
+        margin-left: 0;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .name-res {
+        display: block;
+    }
+
+    .cv {
+        padding-left: 0;
+    }
+
+    .mail-icon {
+        margin: 4px;
+    }
+
+    .mail-txt {
+        display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+        margin: 10px 10px;
+    }
+
+    .expo-intro {
+        overflow: hidden;
+        position: relative;
+        width: 100vw;
+        top: 0;
+    }
+
+    .expo-image {
+        width: 80vw;
+    }
+
+    .expo-video {
+        width: 80vw;
+        height: auto;
+    }
+
+    .expo-video-vertical {
+        width: 50vw;
+    }
+
+    .textcontainer {
+        left: 0;
+        margin: 0 1rem;
+        position: relative;
+        width: 75vw;
+    }
+
+    .laptop {
+        display: none;
+
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .projects h2 {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .intro p {
+        font-size: 1.125em;
+    }
+    
+    .svg-up {
+        margin-top: -2rem;
+    }
+    
+    .top-text {
+        font-size: 1.25rem;
+        top: 12vh;
+    }
+}
